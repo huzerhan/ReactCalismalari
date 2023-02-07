@@ -284,15 +284,38 @@
 //   );
 // }
 
-import React from "react";
-import Joke from "./Components/Jokes/Joke";
-import jokes from "./Components/Jokes/jokesArr";
+// import React from "react";
+// import Joke from "./Components/Jokes/Joke";
+// import jokes from "./Components/Jokes/jokesArr";
 
-function App() {
-  console.log(jokes);
-  const jokeElements = jokes.map((jk) => {
-    return <Joke setup={jk.setup} punchline={jk.punchline} />;
-  });
-  return <div>{jokeElements}</div>;
+// function App() {
+//   console.log(jokes);
+//   const jokeElements = jokes.map((jk) => {
+//     return <Joke setup={jk.setup} punchline={jk.punchline} />;
+//   });
+//   return <div>{jokeElements}</div>;
+// }
+// export default App;
+
+// import React from "react";
+// import Airbnb from "./Components/Airbnb/Airbnb";
+
+// // proplar Airbnb içerisinde çağırıldı
+// export default function App() {
+//   return (
+//     <div>
+//       <Airbnb />
+//     </div>
+//   );
+// }
+
+import React from "react";
+import MyTravels from "./Components/My Travels/MyTravels";
+
+export default function App() {
+  return (
+    <div>
+      <MyTravels />
+    </div>
+  );
 }
-export default App;

@@ -1,22 +1,32 @@
 import "./Airbnb.css";
-import kZaferes from "./katieZaferes.png";
 
-function Card() {
+function Card(props) {
+  let badgeText;
+  if (props.item.openSpots === 0) {
+    badgeText = "SOLD OUT";
+  } else if (props.item.country === "online") {
+    badgeText = "ONLINE";
+  }
   return (
     <div className="card">
+      {
+        badgeText && (
+          <div className="card--badge">{badgeText}</div>
+        ) /* this is now conditional rendering */
+      }
       <div
         className="card--image"
-        style={{ backgroundImage: `url(${kZaferes})` }}
+        style={{ backgroundImage: `url(${props.item.imgUrl})` }}
       ></div>
       <div className="card-bottom">
         <div className="card--rating">
-          <span>⭐ 5.0</span>
+          <span>⭐ {props.item.rating}</span>
           <span className="gray">(6) . </span>
-          <span className="gray">USA</span>
+          <span className="gray">{props.item.country}</span>
         </div>
-        <div className="card--title">Life lessons with Katie Zaferes</div>
+        <div className="card--title">{props.item.title}</div>
         <div className="card--price">
-          <strong>From $136 </strong> / person
+          <strong>From ${props.item.price} </strong> / person
         </div>
       </div>
     </div>

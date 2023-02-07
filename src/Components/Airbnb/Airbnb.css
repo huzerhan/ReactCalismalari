@@ -55,13 +55,30 @@ body {
   /* border: 1px solid red; */
   background-image: url(./heroimage.png);
 }
-
+.card-container {
+  display: flex;
+  gap: 25px;
+  width: 90%;
+  overflow: auto;
+  left: 50%;
+  transform: translateX(-50%);
+  position: relative;
+}
 .card {
   display: flex;
   flex-direction: column;
   width: 176px;
-  left: 37px;
   position: relative;
+}
+.card--badge {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  background-color: white;
+  padding: 5px 5px;
+  border-radius: 2px;
+  font-weight: bold;
+  font-size: 10px;
 }
 .card-bottom {
   display: flex;

@@ -1,0 +1,53 @@
+body {
+  background-color: rgb(94, 94, 94);
+}
+
+.travel--container {
+  position: absolute;
+  width: 800px;
+  height: fit-content;
+  background-color: whitesmoke;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.header {
+  position: relative;
+  padding: 10px;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  background-color: #f55a5a;
+  color: white;
+  font-size: 25px;
+}
+.header--icon {
+  height: 25px;
+}
+
+.travel--card {
+  width: 90%;
+  height: auto;
+  padding: 20px;
+  display: flex;
+  gap: 1rem;
+}
+
+.card--data h2 {
+  padding: 5px;
+  margin: 0;
+}
+.card--data a {
+  color: gray;
+  padding-left: 25px;
+}
+.card--data p {
+  margin: 5px;
+}
+
+.card--image {
+  width: 250px;
+  border-radius: 10px;
+}
