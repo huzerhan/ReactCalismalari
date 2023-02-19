@@ -309,13 +309,27 @@
 //   );
 // }
 
+// import React from "react";
+// import MyTravels from "./Components/My Travels/MyTravels";
+
+// export default function App() {
+//   return (
+//     <div>
+//       <MyTravels />
+//     </div>
+//   );
+// }
+
 import React from "react";
-import MyTravels from "./Components/My Travels/MyTravels";
+import MemeGenerator from "./Components/MemeGenerator/MemeGenerator";
 
 export default function App() {
+  function handleClick() {
+    console.log("click");
+  }
   return (
     <div>
-      <MyTravels />
+      <MemeGenerator />
     </div>
   );
 }
