@@ -1,11 +1,11 @@
 import React from "react";
 import memesData from "./memesData";
-let url;
+
 export default function From() {
+  const memesArray = memesData.data.memes;
   const [image, setImage] = React.useState();
 
   function handleClick() {
-    const memesArray = memesData.data.memes;
     let random = Math.floor(Math.random() * memesArray.length);
     setImage(memesArray[random].url);
   }
@@ -20,7 +20,7 @@ export default function From() {
         </button>
       </div>
       <div className="image-container">
-        <img src={image} />
+        <img src={image} alt={"meme"} />
       </div>
     </main>
   );
