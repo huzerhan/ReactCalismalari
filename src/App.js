@@ -320,6 +320,7 @@
 //   );
 // }
 
+/*
 import React from "react";
 import MemeGenerator from "./Components/MemeGenerator/MemeGenerator";
 
@@ -331,5 +332,23 @@ export default function App() {
     <div>
       <MemeGenerator />
     </div>
+  );
+}
+*/
+
+import React from "react";
+import boxes from "./Components/LiftStateChallange/boxes";
+import "./Components/LiftStateChallange/style.css";
+
+export default function App() {
+  console.log(boxes);
+  const box = boxes.map((x) => {
+    return <span>{x.id}</span>;
+  });
+  return (
+    <main>
+      <h1>Boxes will go here</h1>
+      <div className="boxes-div">{box}</div>
+    </main>
   );
 }

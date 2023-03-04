@@ -1,0 +1,12 @@
+body {
+  margin: 30px;
+}
+.boxes-div {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.boxes-div span {
+  border: 2px solid black;
+  padding: 4px;
+}
